@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas Aleatorias</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/images/Gaming Logo.png" type="image/x-icon">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="/" class="logo-link">
+                <img src="assets/images/Gaming Logo.png" alt="Logo" class="logo-img">
+            </a>
+        </div>
+    
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="/" class="nav-link">Portfolio</a></li>
+                <li><a href="https://hyliard.github.io/Cifradorcesar.github.io/" target="_blank" rel="noopener" class="nav-link">Cifrado Cesar</a></li>
+                <li><a href="https://hyliard.github.io/CalculadoraResponsiva/" target="_blank" rel="noopener" class="nav-link">Calculadora</a></li>
+                <li><a href="/contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <div class="container">
+        <h1>Generador de Contraseñas Aleatorias</h1>
+        <div class="password-container">
+            <input type="text" id="password" readonly>
+            <button id="generate-btn">Generar Contraseña</button>
+        </div>
+        <div class="options">
+            <label for="length">Longitud: </label>
+            <input type="number" id="length" value="12" min="6" max="32">
+        </div>
+        <div class="checkboxes">
+            <label><input type="checkbox" id="include-lowercase" checked> Minúsculas</label>
+            <label><input type="checkbox" id="include-uppercase" checked> Mayúsculas</label>
+            <label><input type="checkbox" id="include-numbers" checked> Números</label>
+            <label><input type="checkbox" id="include-special" checked> Caracteres especiales</label>
+        </div>
+        <p id="error-msg" class="error"></p>
+    </div>
+    <div class="container-footer">
+        <footer>
+            <!-- Logo del pie de página -->
+            <div class="logo-footer">
+              <img src="assets/images/Gaming Logo.png" alt="Logo de Gaming de Hyliard" />
+            </div>
+            
+            <!-- Enlaces a redes sociales -->
+            <div class="redes-footer">
+              <a href="https://www.linkedin.com/in/luis-gerardo-martinez-03898582/" target="_blank" rel="noopener" aria-label="LinkedIn de Luis Gerardo Martínez">
+                <i class="fab fa-linkedin-in icon-redes"></i>
+              </a>
+              <a href="https://github.com/Hyliard" target="_blank" rel="noopener" aria-label="GitHub de Hyliard">
+                <i class="fab fa-github icon-redes"></i>
+              </a>
+              <a href="https://www.twitch.tv/hyliard" target="_blank" rel="noopener" aria-label="Twitch de Hyliard">
+                <i class="fab fa-twitch icon-redes"></i>
+              </a>
+            </div>
+          
+            <!-- Separador horizontal -->
+            <hr />
+            <p>© 2024 Hyliard. Todos los derechos reservados.</p>
+            <h4>Luis Gerardo Martínez Hernández</h4>
+        </footer>
+          
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

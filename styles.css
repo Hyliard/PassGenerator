@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.password-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#password {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#generate-btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#generate-btn:hover {
+    background-color: #45a049;
+}
+
+.options {
+    margin-bottom: 15px;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+
+
+/* Estilo global del body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+    justify-content: space-between; /* Esto coloca el footer al final */
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #2c3e50; /* Color de fondo */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrado de texto */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+footer .logo-footer img {
+    max-width: 150px; /* Tamaño máximo para el logo */
+    margin-bottom: 10px; /* Espaciado debajo del logo */
+}
+
+/* Estilo para los enlaces de redes sociales */
+.redes-footer {
+    margin: 15px 0; /* Espaciado superior e inferior */
+}
+
+.redes-footer a {
+    color: white; /* Color blanco para los iconos */
+    margin: 0 10px; /* Espaciado entre los iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+.redes-footer a:hover {
+    color: #3498db; /* Color al pasar el mouse */
+}
+
+/* Estilo para el separador horizontal */
+footer hr {
+    border: 0;
+    border-top: 1px solid #34495e; /* Línea gris */
+    margin: 20px auto; /* Espaciado y centrado */
+    width: 80%; /* Ancho de la línea */
+}
+
+/* Estilo para el texto debajo del separador */
+footer p {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    margin: 5px 0;
+}
+
+footer h4 {
+    font-size: 16px; /* Tamaño de fuente para el nombre */
+    margin: 0;
+}
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color-light);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Logo */
+.logo-img {
+    height: 40px;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--primary-color-dark);
+}
+
+
+/* Estilo para pantallas más pequeñas (responsivo) */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Ocultar los enlaces en pantallas pequeñas */
+    }
+
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar.active {
+        display: block;
+        margin-top: 10px;
+    }
+}
