@@ -1,0 +1,54 @@
+PassGenerator
+
+PassGenerator es una aplicación web que permite generar contraseñas aleatorias y seguras de manera rápida y sencilla. Puedes personalizar la longitud de la contraseña y elegir si incluir caracteres especiales, mayúsculas, minúsculas y números.
+
+Características
+
+Generación aleatoria de contraseñas: La aplicación genera contraseñas seguras y difíciles de adivinar de forma aleatoria.
+Personalización de longitud: Puedes establecer la longitud deseada para la contraseña.
+Selección de caracteres: Escoge si deseas incluir mayúsculas, minúsculas, números y caracteres especiales en la contraseña generada.
+Interfaz sencilla: La aplicación está diseñada para ser intuitiva y fácil de usar.
+Tecnologías utilizadas
+
+HTML: Estructura de la página web.
+CSS: Estilos y diseño de la interfaz.
+JavaScript: Lógica para generar contraseñas aleatorias y manejar la interacción con el usuario.
+Instalación
+
+Este es un proyecto estático, por lo que solo necesitas descargar los archivos y abrir el archivo index.html en tu navegador.
+
+Clona el repositorio o descarga los archivos:
+git clone https://github.com/tuusuario/passgenerator.git
+Accede al proyecto:
+Navega a la carpeta donde descargaste los archivos.
+
+cd passgenerator
+Abre el archivo index.html en tu navegador:
+Haz doble clic sobre el archivo index.html o usa el siguiente comando en tu terminal para abrirlo:
+
+open index.html # En macOS
+start index.html # En Windows
+xdg-open index.html # En Linux
+Uso
+
+Generar contraseña: Simplemente haz clic en el botón "Generar" para obtener una contraseña aleatoria.
+Personalización: Ajusta la longitud de la contraseña utilizando el control deslizante (slider).
+También puedes seleccionar o deseleccionar las casillas para incluir:
+
+Mayúsculas
+Minúsculas
+Números
+Caracteres especiales
+Copiar la contraseña: Una vez generada la contraseña, puedes copiarla al portapapeles haciendo clic en el icono de copiar al lado de la contraseña.
+Contribución
+
+Si deseas mejorar o agregar nuevas funcionalidades a este proyecto, siéntete libre de abrir un pull request. Para contribuir:
+
+Haz un fork del repositorio.
+Crea una nueva rama (git checkout -b nueva-caracteristica).
+Realiza tus cambios y haz un commit (git commit -am 'Agrega nueva característica').
+Haz un push a tu rama (git push origin nueva-caracteristica).
+Abre un pull request para que revisemos tus cambios.
+Licencia
+
+Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo LICENSE.
