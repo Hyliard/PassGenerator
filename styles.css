@@ -1,26 +1,191 @@
+:root {
+    --primary-color: hsl(214, 84%, 56%);
+    --text-color: hsl(0, 0%, 31%);
+    --bg-color: hsl(0, 0%, 90%);
+    --bg-card-color: hsl(0, 0%, 98%);
+    --border-radius: 0.4em;
+    --transition: color 0.1s, background-color 0.2s ease-in-out;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: flex;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
-    background-color: #f4f4f9;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: var(--transition);
+    font-family: sans-serif;
+    justify-content: center;
+    height: 100vh;
+    justify-content: space-between; 
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-.container {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
+
+body.dark {
+    --text-color: hsl(0, 0%, 83%);
+    --bg-color: hsl(0, 0%, 15%);
+    --bg-card-color: hsl(0, 0%, 20%);
+
 }
+
+/* Media query para pantallas pequeñas (como móviles) */
+@media (max-width: 768px) {
+    body {
+        background-color: var(--bg-color);
+    }
+}
+
+/* Media query para pantallas muy pequeñas (como móviles en modo retrato) */
+@media (max-width: 480px) {
+    body {
+        background-color: var(--bg-color);
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0 1.5em;
+    background-color: var(--bg-card-color);
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}  
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1rem;
+    padding: auto;
+    background-color: var(--bg-card-color);
+    transition: var(--transition);
+}
+
+.navigation>li {
+    display: flex;
+    position: relative;
+    padding: 0.5rem;
+    cursor: pointer;
+    max-width: max-content;
+    transition: var(--transition);
+}
+
+.navigation>li:hover {
+    color: var(--primary-color);
+}
+
+.navigation>li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.125rem;
+    background-color: var(--primary-color);
+}
+
+.switches {
+    display:contents;
+    align-items:center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.toggle-theme {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-theme__icon {
+    margin-right: 0.5em;
+    width: 20px;
+}
+
+.toggle-theme__text {
+    font-size: 0.8rem;
+}
+
+.colors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    width: 100px;
+}
+
+.colors__item {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--text-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.colors__item--blue {
+    --primary-color: hsl(214, 84%, 56%);
+}
+
+.colors__item--green {
+    --primary-color: hsl(150, 84%, 56%);
+}
+
+.colors__item--purple {
+    --primary-color: hsl(276, 84%, 56%);
+}
+
+.colors__item--orange {
+    --primary-color: hsl(46, 84%, 56%);
+}
+
+.title {
+    text-align: center;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.container-main {
+    width: 100%; /* El contenedor ocupará el 100% del ancho de su elemento padre */
+    max-width: 1200px; /* Limita el ancho máximo a 1200px, ajustable según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno alrededor del contenido */
+    background-color: var(--bg-card-color); /* Color de fondo suave */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    display: flex; /* Flexbox para estructurar el contenido internamente */
+    flex-direction: column; /* Organiza los elementos dentro del contenedor en una columna */
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+    justify-content: flex-start; /* Alinea los elementos al principio del contenedor */
+  }
+
+
+
 
 h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .password-container {
@@ -28,6 +193,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    gap: 10px;
 }
 
 #password {
@@ -70,19 +236,11 @@ h1 {
 
 
 
-/* Estilo global del body */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
-    justify-content: space-between; /* Esto coloca el footer al final */
-}
+
 
 /* Estilo para el pie de página */
 footer {
-    background-color: #2c3e50; /* Color de fondo */
+    background-color: var(--bg-card-color); /* Color de fondo */
     color: white; /* Texto blanco */
     text-align: center; /* Centrado de texto */
     padding: 20px 0; /* Espaciado superior e inferior */
@@ -90,8 +248,9 @@ footer {
 }
 
 footer .logo-footer img {
-    max-width: 150px; /* Tamaño máximo para el logo */
-    margin-bottom: 10px; /* Espaciado debajo del logo */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
 }
 
 /* Estilo para los enlaces de redes sociales */
@@ -133,17 +292,6 @@ footer h4 {
 
 
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: var(--primary-color-light);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
 
 /* Logo */
 .logo-img {

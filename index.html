@@ -11,26 +11,37 @@
     </head>
     
 </head>
-<body>
+<body class="dark">
     <header class="header">
-        <div class="logo">
-            <a href="/" class="logo-link">
-                <img src="assets/images/Gaming Logo.png" alt="Logo" class="logo-img">
-            </a>
-        </div>
-    
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="/" class="nav-link">Portfolio</a></li>
-                <li><a href="https://hyliard.github.io/Cifradorcesar.github.io/" target="_blank" rel="noopener" class="nav-link">Cifrado Cesar</a></li>
-                <li><a href="https://hyliard.github.io/CalculadoraResponsiva/" target="_blank" rel="noopener" class="nav-link">Calculadora</a></li>
-                <li><a href="/contact" class="nav-link">Contacto</a></li>
+        <!-- Contenedor de switches (modo oscuro y colores) -->
+        <nav class="switches">
+            <!-- Toggle de tema -->
+            <div id="toggle-theme" class="toggle-theme" role="button" aria-label="Cambiar tema">
+                <img id="toggle-icon" src="assets/icon/moon.svg" alt="Icono de tema oscuro"
+                    class="toggle-theme__icon" />
+                <p id="toggle-text" class="toggle-theme__text"></p>
+            </div>
+            <ul class="navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
             </ul>
+            <!-- Contenedor de selección de colores 
+            <div id="toggle-colors" class="colors" aria-label="Seleccionar color de tema">
+                <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue" aria-label="Color Azul">
+                </div>
+                <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green" aria-label="Color Verde">
+                </div>
+                <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"
+                    aria-label="Color Púrpura"></div>
+                <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"
+                    aria-label="Color Naranja"></div>
+            </div> -->
         </nav>
     </header>
     
     
-    <div class="container">
+    <div class="container-main">
         <h1>Generador de Contraseñas Aleatorias</h1>
         <div class="password-container">
             <input type="text" id="password" readonly>
