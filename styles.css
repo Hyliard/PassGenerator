@@ -37,6 +37,10 @@ body {
     flex-direction: column;
 }
 
+.more-text {
+    display: none;
+    
+}
 
 body.dark {
     --text-color: hsl(0, 0%, 83%);
@@ -166,18 +170,29 @@ body.dark {
 }
 
 .container-main {
-    width: 100%; /* El contenedor ocupará el 100% del ancho de su elemento padre */
-    max-width: 1200px; /* Limita el ancho máximo a 1200px, ajustable según tus necesidades */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    padding: 20px; /* Espaciado interno alrededor del contenido */
-    background-color: var(--bg-card-color); /* Color de fondo suave */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
-    display: flex; /* Flexbox para estructurar el contenido internamente */
-    flex-direction: column; /* Organiza los elementos dentro del contenedor en una columna */
-    align-items: center; /* Centra los elementos hijos horizontalmente */
-    justify-content: flex-start; /* Alinea los elementos al principio del contenedor */
-  }
+    width: 100%;
+    /* El contenedor ocupará el 100% del ancho de su elemento padre */
+    max-width: 1200px;
+    /* Limita el ancho máximo a 1200px, ajustable según tus necesidades */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+    padding: 20px;
+    /* Espaciado interno alrededor del contenido */
+    background-color: var(--bg-card-color);
+    /* Color de fondo suave */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para darle profundidad */
+    display: flex;
+    /* Flexbox para estructurar el contenido internamente */
+    flex-direction: column;
+    /* Organiza los elementos dentro del contenedor en una columna */
+    align-items: center;
+    /* Centra los elementos hijos horizontalmente */
+    justify-content: flex-start;
+    /* Alinea los elementos al principio del contenedor */
+}
 
 
 
@@ -232,6 +247,21 @@ h1 {
 .error {
     color: red;
     font-size: 14px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 
